@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">latihanuts</string>
+    <string name="halaman_registrasi">Halaman Registrasi</string>
+    <string name="masukan_email">Masukan Email</string>
+    <string name="masukan_password">Masukan Password</string>
+    <string name="masukan_nama">Masukan Nama</string>
+    <string name="pilih_jenis_kelamin">Pilih Jenis Kelamin</string>
+    <string name="laki_laki">Laki-laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="masukan_tanggal_lahir">Masukan Tanggal Lahir</string>
+    <string name="masukan_alamat">Masukan Alamat</string>
+    <string name="submit">Submit</string>
+    <string name="aplikasi_profil_pengguna_sederhana">Aplikasi Profil Pengguna Sederhana</string>
+    <string name="gilang_nur_rizki">Gilang Nur Rizki</string>
+    <string name="npm">22552011037</string>
+</resources>

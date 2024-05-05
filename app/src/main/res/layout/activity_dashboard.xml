@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@mipmap/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <TextView
+        android:id="@+id/txt_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"/>
+
+    <TextView
+        android:id="@+id/txt_greeting"
+        android:layout_below="@+id/txt_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang!"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="15sp"
+        android:layout_marginStart="20sp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_greeting"
+        android:background="@drawable/button_shape"
+        android:layout_margin="5sp"
+        android:padding="10sp">
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:src="@drawable/profile"/>
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_toEndOf="@+id/img_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gilang Nur Rizki"
+            android:layout_marginStart="10sp"
+            android:textColor="@color/dark"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/txt_email_user"
+            android:layout_below="@id/txt_name"
+            android:layout_toEndOf="@+id/img_profile"
+            android:layout_marginStart="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark"
+            android:textSize="18sp"
+            android:text="gilangnurrizki173@gmail.com"/>
+
+        <TextView
+            android:id="@+id/txt_jk"
+            android:layout_below="@id/txt_email_user"
+            android:layout_toEndOf="@id/img_profile"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textColor="@color/dark"
+            />
+        <TextView
+            android:id="@+id/txt_jk_user"
+            android:layout_below="@id/txt_jk"
+            android:layout_toEndOf="@id/img_profile"
+            android:layout_marginStart="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki"
+            android:textSize="18sp"
+            android:textColor="@color/dark"
+            />
+
+        <TextView
+            android:id="@+id/txt_tgl"
+            android:layout_below="@id/txt_email_user"
+            android:layout_toEndOf="@id/txt_jk"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"
+            android:textColor="@color/dark"
+            />
+        <TextView
+            android:id="@+id/txt_tgl_user"
+            android:layout_below="@id/txt_tgl"
+            android:layout_toEndOf="@id/txt_jk_user"
+            android:layout_marginStart="60sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17/03/2004"
+            android:textSize="18sp"
+            android:textColor="@color/dark"
+            />
+
+        <TextView
+            android:id="@+id/txt_alamat"
+            android:layout_below="@+id/txt_jk_user"
+            android:layout_toEndOf="@id/img_profile"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textColor="@color/dark"
+            />
+
+        <TextView
+            android:id="@+id/txt_alamat_user"
+            android:layout_below="@+id/txt_alamat"
+            android:layout_toEndOf="@id/img_profile"
+            android:layout_marginStart="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jalan Kenanga Gang Dewi Soja no 04 Tanjungsari Sumedang"
+            android:textSize="18sp"
+            android:textColor="@color/dark"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/layout_info"
+        android:padding="20sp"
+        android:layout_margin="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_shape"
+            android:padding="20sp"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="70sp"
+                android:src="@drawable/padlock"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="10sp"
+                android:textColor="@color/white"
+                android:text="Lihat Password"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_email"
+            android:layout_toEndOf="@id/layout_password"
+            android:layout_marginStart="45sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_shape"
+            android:padding="20sp"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="70sp"
+                android:src="@drawable/email"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="15sp"
+                android:layout_marginTop="10sp"
+                android:textColor="@color/white"
+                android:text="Kirim Email"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_maps"
+            android:layout_below="@id/layout_password"
+            android:layout_marginTop="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_shape"
+            android:padding="20sp"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="70sp"
+                android:src="@drawable/maps"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="15sp"
+                android:layout_marginTop="10sp"
+                android:textColor="@color/white"
+                android:text="Buka Maps"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_share"
+            android:layout_toEndOf="@id/layout_password"
+            android:layout_below="@+id/layout_email"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="45sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_shape"
+            android:padding="20sp"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="70sp"
+                android:src="@drawable/share"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="15sp"
+                android:layout_marginTop="10sp"
+                android:textColor="@color/white"
+                android:text="Bagikan"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
